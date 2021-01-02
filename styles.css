@@ -21,6 +21,10 @@ a:hover {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 #get-started-btn {
   color: #fff;
   background: transparent;
@@ -84,6 +88,10 @@ a:hover {
   text-decoration: none;
   background: #323333;
   border-bottom: 10px solid #fff;
+}
+
+.nav-links:visited {
+  color: #fff;
 }
 
 
@@ -165,7 +173,7 @@ video {
 
 @media screen and (max-width: 768px) {
   .nav-container {
-    position: fixed;
+    position: sticky;
   }
 
   .nav-menu {
