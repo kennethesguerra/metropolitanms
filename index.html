@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Responsive Layout - Grid</title>
+      <title>Metropolitan Mountaineering Society</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       <link rel="stylesheet" href="styles.css">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+      <link rel="icon" href="images/mmslogo.jpg" />
+      <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+      <script src="https://kit.fontawesome.com/f405a323dd.js" crossorigin="anonymous"></script>
     </head>
     <body>
       <div class="nav-container">
         <nav class="nav-bar">
           <div id="navbar-logo">
-            <h2>THORIN OAKENSHIELD</h2>
+            <div class="row">
+              <div class="col-md-2">
+                <img src="images/MMS_LOGO_PNG.png" width="60" height="60" alt="MMS_LOGO" />
+              </div>
+              <div class="col-md-10">
+                <span id="title-header">Metropolitan Mountaineering Society</h3>
+              </div>
+            </div>
           </div>
           <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -20,12 +31,194 @@
             <span class="bar"></span>
           </div>
           <ul class="nav-menu">
-            <li><a href="#" class="nav-links">Home</a></li>
-            <li><a href="#" class="nav-links">About</a></li>
-            <li><a href="#" class="nav-links">Services</a></li>
-            <li><a href="#" class="nav-links">Portfolio</a></li>
+            <li><a href="#about" class="nav-links">About</a></li>
+            <li><a href="#training" class="nav-links">Training</a></li>
+            <li><a href="#contact" class="nav-links">Contact</a></li>
           </ul>
         </nav>
+      </div>
+      <div class='hero-container'>
+        <video src='videos/video-1.mp4' autoPlay loop muted></video>
+        <div class='hero-text'>
+          <h1>ADVENTURE AWAITS</h1>
+          <p>Shaping people for nature.</p>
+          <button id="get-started-btn">GET STARTED</button>
+        </div>
+      </div>
+      <div class="main-container">
+        <a id="about"></a>
+        <div id="about-section" class="section">
+          <h1>ABOUT MMS</h1>
+          <hr color="black" />
+          <div class="row">
+            <div class="col-md-6">
+              <div style="text-align: center; margin-bottom: 20px;">
+                <img src="images/mms_founders.jpg" width="520" height="305" alt="MMS Founders"/>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p>
+                The Metropolitan Mountaineering Society, also known as MMS or MetropolitanMS is a Manila (Philippine) based outdoor organization officially registered at the Philippine Securities and Exchange Commission (SEC) as a non-stock, non-profit organization. Though the organization started out in Metro Manila where majority of the members comes from; currently there are already members outside of the city and even the country. Wherever there are significant numbers of members located in a physical geography, an informal chapter arises like the MMS-US chapter to celebrate the long lasting bond that ties each member.</
+              </p>
+            </div>
+          </div>
+          <p>
+            The organization was founded on March of 1994 at the summit of Mt. Makiling in Laguna. It was founded by what now is considered the eight founding members- Dennis Sacro, Ed Ocampo, Long Henson, Anne Sacro, Jeric Yaya, Joey Avila, Richard Kahulugan and Boying Amio.
+          </p>
+          <div class="row">
+            <div class="col-md-4">
+              <h3 style="text-align: center">MISSION</h3>
+              <p>We commit to develop ourselves in protecting the environment by promoting responsible mountaineering and other outdoor related activities.</p>    
+            </div>
+            <div class="col-md-4">
+              <h3 style="text-align: center">VISION</h3>
+              <p>Shaping people for nature.</p>
+            </div>
+            <div class="col-md-4">
+              <h3 style="text-align: center">OBJECTIVES</h3>
+              <ul>
+                  <li>Educate people by conducting trainings, seminars, forums and conferences related to outdoor activities.</li>
+                  <li>Undertake social, civic and environmental projects.</li>
+                  <li>Advocate and be a role model of values and wilderness ethics.</li>
+                  <li>Foster friendship and camaraderie.</li>
+                  <li>Establish national and global presence through networking and coordination with other organizations.</li>
+                  <li>Generate funds and resources and acquire and sell properties.</li>
+              </ul>
+            </div>
+          </div>
+          <iframe id="video25year" src="https://www.youtube.com/embed/sF3ZxexLaDs?playlist=sF3ZxexLaDs&loop=1">
+          </iframe>
+          <h3>MMS CREED</h3>
+          <ul class="main-list">
+            <li><span style="color: #008000;">We the members of the Metropolitan Mountaineering Society protect and preserve nature.</span></li>
+            <li><span style="color: #008000;">We share in that responsibility by engaging and promoting outdoor related activities and by actively practicing an environment friendly lifestyle.</span></li>
+            <li><span style="color: #ff9900;">We the members of the Metropolitan Mountaineering Society abide by and uphold the MMS Constitution.</span></li>
+            <li><span style="color: #ff9900;">We respect and follow our leaders, our culture and our traditions.</span></li>
+            <li><span style="color: #ff9900;">We commit ourselves to the organization.</span></li>
+            <li><span style="color: #ff9900;">We support its projects and activities.</span></li>
+            <li><span style="color: #3366ff;">We the members of the Metropolitan Mountaineering Society value camaraderie.</span></li>
+            <li><span style="color: #3366ff;">We respect each other and we complement our differences.</span></li>
+            <li><span style="color: #3366ff;">We will always be responsible for each other at all times.</span></li>
+            <li><span style="color: #ff0000;">We the members of the Metropolitan Mountaineering Society believe that we have a responsibility to ourselves.</span></li>
+            <li><span style="color: #ff0000;">We practice and cultivate a healthy physical, mental and spiritual way of life.</span></li>
+            <li><span style="color: #ff0000;">We continuously enrich ourselves with the skills related to our sports and the environment</span>.</li>
+            <li>And in all of these, we shall always remember that Once an MMS! Forever an MMS!</li>
+          </ul> 
+        </div>
+        <a id="training"></a>
+        <div id="training-section" class="section">
+          <h1>BASIC MOUNTAINEERING COURSE</h1>
+          <hr />
+          <p>
+            MMS prides itself in developing a local basic mountaineering course curriculum designed specifically for the local setting. The course has been a product of 18 years of conducting and continuously refining the course as well as from getting inputs from various authorities on specific topics such as the Philippine Airforce Search and Rescue Group for the rappelling and SAR related topics, The Philippine National Red Cross for the Wilderness First Aid topics, The DENR for the NIPAS and environment related topics and the Leave No Trace curiculum for the LNT portion of the course. Most instructors have undergone these trainings before they have been adapted within MMS.
+          </p>
+          <p>Activities includes the following:</p>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row" style="margin-top: 30px;">
+                <div class="col-md-2">
+                  <i class="fas fa-campground fa-2x"></i>
+                </div>
+                <div class="col-md-6">
+                  <h4>BMC Proper</h4>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 30px">
+                <div class="col-md-2">
+                  <i class="fas fa-briefcase-medical fa-2x"></i></i>
+                </div>
+                <div class="col-md-6">
+                  <h4>Basic Life Support and First Aid</h4>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 30px">
+                <div class="col-md-2" >
+                  <i class="fas fa-compass fa-2x"></i></i>
+                </div>
+                <div class="col-md-6">
+                  <h4>Land Navigation and Orienteering</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="row" style="margin-top: 30px;">
+                <div class="col-md-2">
+                  <img src="images/noun_Rope_1120005.png" width="40" height="40" style="object-fit: cover;"/>
+                </div>
+                <div class="col-md-6">
+                  <h4>Ropemanship</h4>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 30px">
+                <div class="col-md-2">
+                  <img src="images/noun_wall climbing_639526.png" width="40" height="40" style="object-fit: cover;"/>
+                </div>
+                <div class="col-md-6">
+                  <h4>Indoor and Outdoor Wall Climbing</h4>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 30px">
+                <div class="col-md-2" >
+                  <img src="images/noun_rappelling_1441906.png" width="40" height="40" style="object-fit: cover;"/>
+                </div>
+                <div class="col-md-6">
+                  <h4>Rappelling</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="row" style="margin-top: 30px;">
+                <div class="col-md-2">
+                  <i class="fas fa-mountain fa-2x"></i>
+                </div>
+                <div class="col-md-6">
+                  <h4>Minor Training Climbs</h4>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 30px">
+                <div class="col-md-2">
+                  <i class="fas fa-mountain fa-3x"></i>
+                </div>
+                <div class="col-md-6">
+                  <h4>Major Training Climbs</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a id="contact"></a>
+        <div id="contact-section" class="section">
+          <h1>CONTACT</h1>
+          <hr />
+          <div class="row">
+            <div class="col-md-7">
+              <img src="images/talamitam.jpg" width="650" height="400" style="object-fit: cover;" />
+            </div>
+            <div class="col-md-5">
+              <h3>BE ONE OF US</h3>
+              <p>For more questions and inquiries, please contact:</p>
+              <br />
+              <p>Karis Corpus: 09778101228</p>
+              <p>Khayie Aurea: 09175862254</p>
+              <br />
+              <p>Or join us on our Public FB Group:</p>
+              <button class="btn btn-primary" id="fb-page-btn">
+                <i class="fab fa-facebook-f"></i>
+              </button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="footer-content">
+          <span>&copy; 2020 Metropolitan Mountaineering Society</span>
+          <br />
+          <span class="text-muted">
+            Website by <a class="text-muted" target="_blank" href="https://github.com/kennethesguerra">@kennethesguerra</a>
+          </span>
+        </div>
       </div>
     </body>
     <script src="app.js"></script>

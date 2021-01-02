@@ -5,18 +5,45 @@
   font-family: 'Roboto', sans-serif;
 }
 
+p, ul {
+  font-size: 20px;
+}
+
+hr {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#get-started-btn {
+  color: #fff;
+  background: transparent;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
 .nav-container {
   width: 100%;
-  background: #000;
+  background: #1C1B1B;
   color: #fff;
+  position: fixed;
+  z-index: 999;
 }
 
 .nav-bar {
   display: grid;
-  grid-template-columns: 0.2fr auto 1fr;
+  grid-template-columns: 0.5fr auto 1fr;
   align-items: center;
   height: 80px;
-  width: 90%;
+  width: 100%;
   max-width: 1720px;
   margin: 0 auto;
 }
@@ -44,19 +71,101 @@
 }
 
 .nav-links {
-  text-decoration: none;
+  text-align: center;
+  line-height: 80px;
+  display: block;
   color: #fff;
-  font-size: 16px;
+  height: 80px;
+  text-decoration: none;
 }
 
 .nav-links:hover {
-  color: red;
-  transition: all 0.2s ease-out;
+  color: #fff;
+  text-decoration: none;
+  background: #323333;
+  border-bottom: 10px solid #fff;
+}
+
+
+.main-list {
+  list-style: none;
+}
+
+#title-header {
+  line-height: 50px;
+  font-size: 22px;
+}
+
+#mms-logo {
+  display: block;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#footer {
+  width: 100%;
+  padding: 23px;
+  background: #eee;
+}
+
+#footer-content {
+  text-align: center;
+}
+
+.hero-container {
+  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.hero-text {
+  position: absolute;
+  text-align: center;
+}
+
+.hero-text > h1 {
+  color: #fff;
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.hero-text > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+#video25year {
+  width: 100%;
+  height: 515px;
+}
+
+.section {
+  padding-top: 85px;
 }
 
 @media screen and (max-width: 768px) {
   .nav-container {
-    position: relative;
+    position: fixed;
   }
 
   .nav-menu {
@@ -67,7 +176,7 @@
     width: 100%;
     position: absolute;
     top: 80px;
-    display: none;
+	  left: -100%;
     opacity: 0;
     transition: all 0.5s ease;
    
@@ -117,5 +226,15 @@
 
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #title-header {
+    font-size: 15px;
+    display: none;
+  }
+
+  #video25year {
+    width: 100%;
+    height: 315px;
   }
 }
