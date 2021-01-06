@@ -18,3 +18,6 @@ const getStartedBtn = document.getElementById('get-started-btn');
 getStartedBtn.addEventListener('click', function(){
   document.getElementById('about').scrollIntoView();
 })
+
+var date = new Date();
+document.getElementById('copyrightYear').innerHTML = date.getFullYear();
